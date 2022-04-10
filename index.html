@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700;1,900&family=Oswald:wght@300;400&family=Poppins:ital,wght@0,300;1,400&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,500;1,500&family=Rubik&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@700&family=Lato:ital,wght@1,700;1,900&family=Oswald:wght@300;400&family=Poppins:ital,wght@0,300;1,400&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,500;1,500&family=Rubik&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		body{
+			background-color: #ededed;
+			margin: 0;
+		}
+
+		.Navbar{
+			width: 100%;
+			height: 3.5rem;
+			background-color: #282928;
+		}
+
+		.P1{
+			width: 100%;
+			height: 100vh;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 1rem;
+		}
+
+		.main_image{
+			background-image: url('https://media.idownloadblog.com/wp-content/uploads/2021/09/iPhone-13-pro-inspired-wallpaper-birchtree-idownloadblog-mockup.jpg');
+			background-size: 80vw;
+			background-position: -12.5vw 0;
+			background-repeat: no-repeat;		
+		}
+
+		.side{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 0.2fr 1fr;
+			grid-row-gap: 3vw;
+		}
+
+		.side_card_parent{
+			display: flex;
+			justify-content: center;
+		}
+
+		.side_card{
+			position: relative;
+			left: -5%;
+			background-color: #282928;
+			width: 40vw;
+			height: 20vw;
+			display: grid;
+			grid-template-columns: 1fr 0.65fr;
+			box-shadow: 1px 1px 5px black;
+		}
+
+		.side_text{
+			position: relative;
+			left: 6.5%;
+			font-size: 7vw;
+			font-family: 'Poppins', sans-serif;
+			text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+		}
+
+		.st1{
+			position: relative;
+			top: 2vw;
+		}
+
+		.st2{
+			position: relative;
+			top: 1vw;
+		}
+
+		.card_image{
+			background-image: url("https://img.freepik.com/free-photo/stylish-asian-girl-sitting-cafe-near-window-paying-online-shopping-with-credit-card_197531-22926.jpg?size=626&ext=jpg");
+			background-size: cover;
+		}
+
+		@media screen and (max-width: 600px) {
+			.P1{
+				grid-template-columns: 1fr;
+				grid-template-rows: 80vw 50vw 10vw;
+			}
+
+			.main_image{
+				background-size: 120vw;
+				background-position: 50% 0;
+				position: relative;
+				top: 70vw;
+				/*background-image: url('https://media.idownloadblog.com/wp-content/uploads/2021/07/Windows-11-wallaper-for-iPhone-mattbirchler-idownloadblog-mockup.jpg');*/
+				background-image: url('https://media.idownloadblog.com/wp-content/uploads/2019/01/true-black-color-gradient-ar72014-mock-up.png');
+			}
+
+			.main_image::before{
+				position: relative;
+				top: -8vw;
+				left: 25vw;
+				font-size: 4vw;
+  				white-space: pre-wrap;
+				content: "\"Because quality always \A   comes with excellence\"";
+				font-family: 'Libre Baskerville', serif;
+				display: block;
+				
+			}
+
+			.side_text{
+				left: 0;
+				font-size: 8vw;
+				margin: auto;
+			}
+
+			.side_card{
+				width: 85vw;
+				height: 45vw;
+				position: relative;
+				left: 0;
+				top: 30vw;
+				margin: auto;
+			}
+
+			.side_text{
+				text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+			}
+
+			.st1{
+				font-size: 10vw;
+				position: relative;
+				top: -75vw;
+				left: 10vw;
+			}
+
+			.st2{
+				font-size: 10vw;
+				position: relative;
+				top: -75vw;
+				left: 10vw;
+			}
+
+			.st2::after{
+				font-size: 4vw;
+				position: relative;
+				top: 18vw;
+				padding: 5px 10px;
+				left: -37vw;
+				background-color: #282928;
+				color: white;
+				border-radius: 25px;
+				content: 'G-Phone';
+				box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+			}
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="Navbar"></div>
+	<div class="P1">
+		<div class="main_image">
+		</div>
+		<div class="side">
+			<div class="side_text">
+				<div class="st1">Redefining</div>
+				<div class="st2">Excellence</div>
+			</div>
+			<div class="side_card_parent">
+				<div class="side_card">
+					<div class="card_image"></div>
+					<div class="card_text"></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
